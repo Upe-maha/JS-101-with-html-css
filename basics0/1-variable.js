@@ -1,7 +1,10 @@
-const accountId = 144553;
-
-let accountEmail = "saugat@google.com";
+const acountId = 144553; //value change hudina
+let accountEmail;
+accountEmail = "saugat@google.com"; //value change hunch
+var userPassword = "67890"; //value change hunch
 var userPassword = "67890";
+// var userPassword = "223";
+
 accountCity = "Kathmandu";
 let accountState;
 accountEmail = "saugat@gmail.com";
@@ -25,3 +28,4 @@ console.table([
   accountCity,
   accountState,
 ]);
+//consoles [144553, hc@hc.com, 98765, 'Patan', undefined]
