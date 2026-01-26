@@ -1,5 +1,10 @@
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll("button");
+function removeval() {
+  let value = display.value;
+value.addEventListener("")
+  display.value = value.slice(0, -1);
+}
 
 buttons.forEach(function (button) {
   button.addEventListener("click", function () {
@@ -8,7 +13,11 @@ buttons.forEach(function (button) {
       clearDisplay();
     } else if (value === "=") {
       calculate();
-    } else {
+    }
+    else if (value === "<=") {
+    removeval();
+    }
+    else {
       appendToDisplay(String(value));
     }
   });

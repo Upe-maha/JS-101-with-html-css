@@ -19,7 +19,7 @@ console.log(gameName.indexOf("t"));
 const newString = gameName.substring(0, 4); //0 to 4 index samma but not including 4
 console.log(newString);
 
-const anotherString = gameName.slice(-8, -1);
+const anotherString = gameName.slice(-1);
 console.log(anotherString);
 
 const newStringOne = "   saugat    ";

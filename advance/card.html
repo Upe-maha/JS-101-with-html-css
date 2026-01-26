@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+<script>
+    const container = document.querySelector('.container');
+    const card= document.createElement('div');
+        card.classList.add('card');
+        // card.classList.remove('card');
+        // card.classList.toggle('card');
+        card.textContent = 'This is a dynamically created card.';
+        card.style.width = '200px';
+        card.style.height = '100px';
+        const header = document.createElement('h2');
+        header.textContent = 'Card Title';
+        card.appendChild(header);
+        const paragraph = document.createElement('p');
+    paragraph.textContent = 'This is some description inside the card.';
+    card.appendChild(paragraph);
+
+    document.body.appendChild(card);
+</script>
+</html>
